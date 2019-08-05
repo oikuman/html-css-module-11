@@ -1,0 +1,30 @@
+:root {
+    --main-black-color: rgb(50, 50, 50);
+    --main-grey-color: rgb(159, 159, 159);
+    --main-green-color: rgb(149, 225, 211);
+    --lite-red-color: rgb(249, 198, 198);
+    --dark-red-color: rgb(243, 129, 129);
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}

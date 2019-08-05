@@ -1,0 +1,201 @@
+.header {
+    margin: 0 0 94px;
+    padding: 0;
+    background: linear-gradient(
+            90deg,
+            rgba(252, 227, 138, 0.9) 0%,
+            rgba(243, 129, 129, 0.9) 100%
+        ),
+        url("../images/eagle-min.png");
+    
+
+    background-repeat: no-repeat;
+    min-height: 1000px;
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 0 230px;
+}
+
+.header__nav-bar {
+    margin: 0 0 52px;
+    padding: 0;
+    min-height: 86px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.header__logo-link {
+    display: flex;
+    align-items: center;
+    height: 86px;
+    text-decoration: none;
+}
+
+.header__logo-text {
+    display: flexbox;
+    font-family: $Montserrat-font;
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    width: 490px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation__item {
+}
+
+.site-navigation__link {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s linear, border 0.2s linear;
+    border-bottom: 3px solid transparent;
+}
+
+.site-navigation__text {
+    font-family: $Montserrat-font, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flexbox;
+}
+
+.site-navigation__svg {
+    width: 18px;
+    fill: $white-color;
+}
+
+.site-navigation__link--underlined:focus,
+.site-navigation__link--underlined:hover {
+    color: rgb(252, 227, 138);
+    border-bottom: 3px solid rgb(252, 227, 138);
+}
+
+.site-navigation__link .site-navigation__svg:focus,
+.site-navigation__link .site-navigation__svg:hover {
+    fill: rgb(252, 227, 138);
+}
+
+.header__title, .services__title, .team__title {
+    font-family: $Montserrat-font, sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title--black {
+    color: $black-color;
+}
+
+.title--white {
+    color: $white-color;
+}
+
+.title--medium {
+    font-size: 30px;
+}
+
+.title--large {
+    font-size: 150px;
+}
+
+.title--narrow {
+    max-width: 380px;
+}
+
+.title--wide {
+    max-width: 840px;
+}
+
+.title--with-padding {
+    padding-bottom: 64px;
+}
+
+.title--with-margin {
+    margin-bottom: 110px;
+}
+
+.title--medium::after {
+    content: "";
+    width: 160px;
+    height: 8px;
+    background-color: var(--dark-red-color);
+    border: none;
+    margin: 42px auto 0;
+    padding: 0;
+    display: block;
+    clear: both;
+}
+
+.header__pretitle, .services__pretitle, .team__pretitle {
+    display: block;
+    margin: 0 0 24px;
+    padding: 0;
+    font-family: $Kaushan-font, cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.title__pretitle--black {
+    color: $black-color;
+}
+
+.title__pretitle--white {
+    color: $white-color;
+}
+
+.title__pretitle--high {
+    line-height: 86px;
+}
+
+.title__pretitle--low {
+    line-height: 24px;
+}
+
+.title__pretitle--large {
+    font-size: 72px;
+}
+
+.title__pretitle--medium {
+    font-size: 14px;
+}
+
+.header__button {
+    display: block;
+    margin: 0 auto;
+    padding: 11px 30px;
+    border: 3px solid transparent;
+    max-width: 400px;
+    font-family: $Montserrat-font, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+        border: 3px solid white;
+    }
+}
+
